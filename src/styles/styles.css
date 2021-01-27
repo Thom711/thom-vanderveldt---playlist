@@ -52,6 +52,39 @@ main {
   background-color: #03b803;
 }
 
+.buttonsbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0px 40px 0px;
+}
+
+.buttonsbar label {
+  margin-right: 5px;
+}
+
+.buttonsbar select {
+  font-family: 'JetBrains Mono', monospace;
+  margin-left: 5px;
+}
+
+.buttonsbar .filters {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.buttonsbar .filters input {
+  margin-left: 10px;
+}
+
+.buttonsbar button {
+  font-family: 'JetBrains Mono', monospace;
+  color: black;
+}
+
 .playlist-container {
   border-top: 1px gray dashed;
   border-bottom: 1px gray dashed;
@@ -67,7 +100,7 @@ main {
 
 table {
   width: 100%;
-  margin-left: 100px;
+  margin-left: 120px;
   table-layout: fixed;
   border-collapse: collapse;
   margin-bottom: 50px;

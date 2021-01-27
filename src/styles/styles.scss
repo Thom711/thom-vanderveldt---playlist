@@ -44,6 +44,35 @@ main {
     }
 }
 
+.buttonsbar {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px 40px 0px;
+
+    label {
+        margin-right: 5px;
+    }
+
+    select {
+        font-family: 'JetBrains Mono', monospace;
+        margin-left: 5px;
+    }
+
+    .filters {
+        margin-left: 50px;
+        margin-right: 50px;
+
+        input {
+            margin-left: 10px;
+        }
+    }
+
+    button {
+        font-family: 'JetBrains Mono', monospace;
+        color: black;
+    }
+}
+
 .playlist-container {
     border-top: 1px gray dashed;
     border-bottom: 1px gray dashed;
@@ -55,7 +84,7 @@ main {
 
 table {
     width: 100%;
-    margin-left: 100px;
+    margin-left: 120px;
     table-layout: fixed;
     border-collapse: collapse;
     margin-bottom: 50px;
