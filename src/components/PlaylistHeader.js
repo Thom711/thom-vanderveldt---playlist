@@ -7,7 +7,7 @@ const PlaylistHeader = () => {
                     <th>Genre</th>
                     <th>Rating</th>
                     <th>Link</th>
-                    <th>DD</th>
+                    <th></th>
                 </tr> 
             </thead>
     );
