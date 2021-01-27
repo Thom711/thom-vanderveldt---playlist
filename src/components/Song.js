@@ -1,13 +1,8 @@
-// import { useDispatch } from 'react-redux';
-// import { delete_song } from '../actions';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 const Song = (props) => {
-    // const dispatch = useDispatch();
     const song = props.song;
-
-    // const handleClick = () => {
-    //     dispatch(delete_song(song.id));
-    // };
 
     return (
         <tr>
@@ -15,12 +10,14 @@ const Song = (props) => {
             <td>{song.artist}</td>
             <td>{song.genre ? song.genre : ''}</td>
             <td>{song.rating ? song.rating : ''}</td>
-            <td>{song.link ? <a href="{song.link}" target="_blank">Click Here</a> : ''}</td>
-            <td>DD</td>
+            <td>{song.link ? <a href={song.link} target="_blank" rel="noreferrer">Click Here</a> : ''}</td>
+            <td onClick={
+                    () => props.handleClick(song.id)
+                }>
+                    <FontAwesomeIcon icon={faTrash} />
+            </td>
         </tr>
     );
 };
 
 export default Song;
-
-/* <button onClick={handleClick}>Delete Song</button> */

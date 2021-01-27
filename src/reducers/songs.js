@@ -3,8 +3,11 @@ const songsReducer = (state = [], action) => {
         case "ADD_SONG" :
             return  [...state, action.payload];
         case "DELETE_SONG" :
-            console.log('deleting song with id', action.payload)
-            return state; 
+            const newState = state.filter((song) => {
+                return song.id !== action.payload;
+            });
+
+            return newState;
         default :
             return state;    
     };
