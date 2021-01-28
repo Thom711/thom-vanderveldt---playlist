@@ -12,7 +12,7 @@ const Song = (props) => {
             <td>{song.rating ? song.rating : ''}</td>
             <td>{song.link ? <a href={song.link} target="_blank" rel="noreferrer">Click Here</a> : ''}</td>
             <td onClick={
-                    () => props.handleClick(song.id)
+                    () => props.handleDelete(song.id)
                 }>
                     <FontAwesomeIcon icon={faTrash} />
             </td>
