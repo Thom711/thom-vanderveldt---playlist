@@ -1,14 +1,10 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { add_song } from '../actions';
+import { add_song, increment_id } from '../actions';
 import AddSongForm from '../components/AddSongForm';
 
 const AddSong = () => {
     const dispatch = useDispatch();
-    const songs = useSelector(state => state.songs);
-
-    const returnNewID = () => {
-        return songs.length + 1;
-    };
+    const nextID = useSelector(state => state.incrementID)
 
     const clearForm = (event) => {
         event.target[0].value = '';
@@ -42,7 +38,7 @@ const AddSong = () => {
 
         dispatch(add_song(
             {
-                id: returnNewID(),
+                id: nextID,
                 title: title,
                 artist: artist,
                 genre: genre,
@@ -50,6 +46,8 @@ const AddSong = () => {
                 link: link
             }
         ));
+
+        dispatch(increment_id());
 
         clearForm(event);    
     };

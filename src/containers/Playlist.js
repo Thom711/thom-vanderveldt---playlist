@@ -22,7 +22,7 @@ const Playlist = () => {
         dispatch(filter_songs(event.target.value, event.target.checked));
     };
 
-    const mappedSongs = songs.filter((song) => {
+    const mappedSongs = songs.filter((song) => { // Filter by the filters currently in state
         if(filters.length === 0) {
             return song;
         };
@@ -30,7 +30,7 @@ const Playlist = () => {
         if (filters.includes(song.genre)) {
             return song;
         };
-    }).sort((a, b) => {
+    }).sort((a, b) => { // Sort by the given sorting method
         switch(sortingMethod) {
             case 'none':
                 return a.id - b.id;
@@ -67,7 +67,7 @@ const Playlist = () => {
             default :
                 return a.id - b.id;   
         };
-    }).map((song) => {
+    }).map((song) => { // Map to individual components
         return <Song 
             song={song} 
             key={song.id} 

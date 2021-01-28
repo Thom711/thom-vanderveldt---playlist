@@ -8,3 +8,8 @@ const sortingMethodReducer = (state = 'none', action) => {
 };
 
 export default sortingMethodReducer;
+
+/*
+    Each sorting method has a unique name. Which is set to state.
+    Playlist.js retrieves the sorting method and sorts accordingly.
+*/

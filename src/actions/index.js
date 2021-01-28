@@ -26,3 +26,10 @@ export const filter_songs = (value, checked) => {
         checked: checked
     };
 };
+
+export const increment_id = () => {
+    return {
+        type: "INCREMENT_ID",
+        payload: 1
+    };
+};

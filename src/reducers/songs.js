@@ -14,3 +14,10 @@ const songsReducer = (state = [], action) => {
 };
 
 export default songsReducer;
+
+/*
+    State is an array of songs. Each song is a seperate object.
+    Add song simply adds the new song at the end of the array.
+
+    Delete song filters over all the songs and leaves out the song with the given ID.
+*/

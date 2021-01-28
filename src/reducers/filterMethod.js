@@ -16,3 +16,10 @@ const filterMethodReducer = (state = [], action) => {
 };
 
 export default filterMethodReducer;
+
+/*
+    First a check if the box is checked. If so, it adds the filter to the state. 
+    The state is an array of filters.
+
+    If the checkbox is not checked, the filter is removed from state.
+*/
