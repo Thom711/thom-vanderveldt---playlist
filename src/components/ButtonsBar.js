@@ -1,3 +1,5 @@
+
+
 const ButtonsBar = (props) => {
     return(
         <div className="buttonsbar">
@@ -22,7 +24,7 @@ const ButtonsBar = (props) => {
                 <input type="checkbox" onChange={props.handleFilter} value="Jazz"></input>Jazz
                 <input type="checkbox" onChange={props.handleFilter} value="Hiphop"></input>Hip Hop
             </label>
-             <button>About Me</button>
+             <button onClick={props.changeRoute}>About Me</button>
         </div>
     );
 };

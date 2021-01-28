@@ -2,7 +2,7 @@
   height: 100%;
   width: 80%;
   margin: 0 auto;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   background-color: black;
   color: white;
   border: 1px solid black;
@@ -37,17 +37,17 @@ main {
 }
 
 .add-song input {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   margin-right: 5px;
 }
 
 .add-song select {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   margin-right: 5px;
 }
 
 .add-song button {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   color: white;
   background-color: #03b803;
 }
@@ -67,7 +67,7 @@ main {
 }
 
 .buttonsbar select {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   margin-left: 5px;
 }
 
@@ -81,7 +81,7 @@ main {
 }
 
 .buttonsbar button {
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
   color: black;
 }
 
@@ -128,5 +128,31 @@ td {
 a {
   color: white;
   text-decoration: none;
+}
+
+.about-me-container {
+  border-top: 1px gray dashed;
+  border-bottom: 1px gray dashed;
+  border-radius: 99px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.about-me-container .center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+
+.about-me-container button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "JetBrains Mono", monospace;
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { delete_song, sort_songs, filter_songs } from '../actions';
+import { delete_song, sort_songs, filter_songs, change_route} from '../actions';
 import ButtonsBar from '../components/ButtonsBar';
 import PlaylistHeader from '../components/PlaylistHeader';
 import Song from '../components/Song';
@@ -20,6 +20,10 @@ const Playlist = () => {
 
     const handleFilter = (event) => {
         dispatch(filter_songs(event.target.value, event.target.checked));
+    };
+
+    const changeRoute = () => {
+        dispatch(change_route('about-me'));
     };
 
     const mappedSongs = songs.filter((song) => { // Filter by the filters currently in state
@@ -80,6 +84,7 @@ const Playlist = () => {
              <ButtonsBar 
                 handleSort={handleSort} 
                 handleFilter={handleFilter}
+                changeRoute={changeRoute}
             />
 
              <div className="playlist-container">

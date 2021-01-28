@@ -4,7 +4,7 @@ import AddSongForm from '../components/AddSongForm';
 
 const AddSong = () => {
     const dispatch = useDispatch();
-    const nextID = useSelector(state => state.incrementID)
+    const nextID = useSelector(state => state.incrementID);
 
     const clearForm = (event) => {
         event.target[0].value = '';
