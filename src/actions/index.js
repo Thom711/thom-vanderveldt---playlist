@@ -33,3 +33,10 @@ export const increment_id = () => {
         payload: 1
     };
 };
+
+export const change_route = (value) => {
+    return {
+        type: "CHANGE_ROUTE",
+        payload: value
+    };
+};
